@@ -18,7 +18,7 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faInstagram}
             className="fa-shake"
-            style={{ color: "#d95204" }}
+            style={{ color: "#d95204", fontSize: "4rem"}}
           />
         </a>
         <a
@@ -30,7 +30,7 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faFacebook}
             className="fa-shake"
-            style={{ color: "#d95204" }}
+            style={{ color: "#d95204", fontSize: "4rem" }}
           />
         </a>
       </div>

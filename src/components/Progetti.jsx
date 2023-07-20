@@ -3,7 +3,7 @@ import React from "react";
 const Progetti = (props) => {
   return (
     <section
-      className="section-3 mt-4 flex direction-column align-center justify-center container"
+      className="section-3  flex direction-column align-center justify-center container"
       id="section-3"
     >
         <h1 className="section-titolo mb-4">Progetti</h1>
