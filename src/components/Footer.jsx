@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faFacebook, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -18,7 +18,7 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faInstagram}
             className="fa-shake"
-            style={{ color: "#d95204", fontSize: "4rem"}}
+            style={{ color: "#d95204", fontSize: "4rem" }}
           />
         </a>
         <a
@@ -30,6 +30,18 @@ const Footer = () => {
           <FontAwesomeIcon
             icon={faFacebook}
             className="fa-shake"
+            style={{ color: "#d95204", fontSize: "4rem" }}
+          />
+        </a>
+        <a
+          href="https://github.com/Dexy98"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-media-link"
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            shake
             style={{ color: "#d95204", fontSize: "4rem" }}
           />
         </a>
