@@ -9,7 +9,7 @@ a{text-decoration: none;}
 img{height: auto;}
 
 /* ! Title System */
-h1 {font-size: 54px;margin-bottom: 20px; font-weight: 700;}
+h1 {font-size: 50px;margin-bottom: 20px; font-weight: 700;}
 h2 {font-size: 34px;margin-bottom: 20px;}
 h3 {font-size: 24px;margin-bottom: 20px;}
 h4, p{font-size: 16px;margin-bottom: 20px;}
@@ -82,18 +82,16 @@ h4, p{font-size: 16px;margin-bottom: 20px;}
     background-color: var(--arancio);
     border-radius: 18px;
     padding: 10px 20px;
-    
-}
-.titolo,
-.nome-persona{
     color: var(--nero);
     text-transform: uppercase; letter-spacing: 8px;
     text-align: center;
+    
 }
 
 
+
 .img-persona{
-    width: 355px;height: 355px;
+    width: 255px;height: 255px;
     border-radius: 50%;
     border: .5rem dotted var(--arancio);
 }
@@ -357,7 +355,7 @@ h4, p{font-size: 16px;margin-bottom: 20px;}
 
 
 /* !responsive  */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .img-persona{
     width: 255px;height: 255px;
   }
