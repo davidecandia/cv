@@ -1,6 +1,7 @@
 import progetto1 from "./assets/image/progetto1.jpg"
 import progetto2 from "./assets/image/progetto2.jpg"
 import progetto3 from "./assets/image/progetto3.jpg"
+import progetto4 from "./assets/image/progetto4.jpg"
 
 
 
@@ -22,6 +23,12 @@ const data = [
       name: 'tecnostampa',
       image: progetto3,
       url: 'https://dexy98.github.io/tecnostampa/',
+    },
+    {
+      id: 4,
+      name: 'sinisky',
+      image: progetto4,
+      url: 'https://dexy98.github.io/sinisky/',
     },
     // Aggiungi altri prodotti qui...
   ];
