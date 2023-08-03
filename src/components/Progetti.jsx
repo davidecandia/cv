@@ -1,12 +1,20 @@
 import React from "react";
-
+import { motion } from "framer-motion"
 const Progetti = (props) => {
   return (
     <section
       className="section-3  flex direction-column align-center justify-center container"
       id="section-3"
     >
-        <h1 className="section-titolo mb-4">Progetti</h1>
+        <motion.h1 
+               initial={{x:100}}
+               animate= {{x:0}}
+              transition={{
+                ease: "linear",
+                duration: 2,
+                x: { duration: 1 }
+              }}
+        className="section-titolo mb-4">Progetti</motion.h1>
         <div className="wrap-progetto ">
       {props.data.map((item) => (
         <div key={item.id}>

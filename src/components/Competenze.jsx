@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
@@ -11,53 +12,66 @@ import {
 const Competenze = () => {
   return (
     <section className="section-2  container" id="section-2">
-      <h1 className="section-titolo mt-4 mb-4">Competenze</h1>
+      <motion.h1 
+       initial={{x:100}}
+       animate= {{x:0}}
+      transition={{
+        ease: "linear",
+        duration: 2,
+        x: { duration: 1 }
+      }}
+      className="section-titolo mt-4 mb-4">Competenze</motion.h1>
       <div className="flex icone">
-        <div className="icone_testo">
+        <motion.div 
+        whileHover={{ scale: 1.2, rotate: 0 }}
+        className="icone_testo">
           <FontAwesomeIcon
             className="p-2"
             icon={faHtml5}
-            beat
             style={{ color: "#d95204", fontSize: "8rem" }}
           />
           <p>HTML</p>
-        </div>
-        <div className="icone_testo">
+        </motion.div>
+        <motion.div 
+        whileHover={{ scale: 1.2, rotate: 0 }}
+        className="icone_testo">
           <FontAwesomeIcon
             className="p-2"
             icon={faCss3Alt}
-            beat
             style={{ color: "#d95204", fontSize: "8rem" }}
           />
           <p>CSS</p>
-        </div>
-        <div className="icone_testo">
+        </motion.div>
+        <motion.div 
+        whileHover={{ scale: 1.2, rotate: 0 }}
+        className="icone_testo">
           <FontAwesomeIcon
             className="p-2"
             icon={faReact}
-            beat
             style={{ color: "#d95204", fontSize: "8rem" }}
           />
           <p>REACT</p>
-        </div>
-        <div className="icone_testo">
+        </motion.div>
+        <motion.div 
+        whileHover={{ scale: 1.2, rotate: 0 }}
+        className="icone_testo">
           <FontAwesomeIcon
             className="p-2"
             icon={faBootstrap}
-            beat
             style={{ color: "#d95204", fontSize: "8rem" }}
           />
           <p>BOOTSTRAP</p>
-        </div>
-        <div className="icone_testo">
+        </motion.div>
+        <motion.div 
+        whileHover={{ scale: 1.2, rotate: 0 }}
+        className="icone_testo">
           <FontAwesomeIcon 
           className="p-2"
           icon={faFigma} 
-          beat
           style={{ color: "#d95204", fontSize: "8rem" }}
            />
           <p>FIGMA</p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
