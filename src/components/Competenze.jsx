@@ -1,6 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useEffect } from "react";
+import { useInView } from 'react-intersection-observer';
 import {
   faHtml5,
   faCss3Alt,
@@ -10,16 +12,29 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Competenze = () => {
+  const animation = useAnimation();
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0.5,
+  });
+  useEffect (() => {
+    console.log(inView)
+     if (inView) {
+      animation.start({
+        x: 0,
+        transition: {
+          type: 'spring',
+          duration: 2,
+        },
+      });
+    } else {
+      animation.start({ x: '-100vw' });
+    }
+  }, [inView]);
   return (
-    <section className="section-2  container" id="section-2">
+    <section ref={ref} className="section-2  container" id="section-2">
       <motion.h1 
-       initial={{x:100}}
-       animate= {{x:0}}
-      transition={{
-        ease: "linear",
-        duration: 2,
-        x: { duration: 1 }
-      }}
+        animate={animation}
       className="section-titolo mt-4 mb-4">Competenze</motion.h1>
       <div className="flex icone">
         <motion.div 
