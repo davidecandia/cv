@@ -1,8 +1,8 @@
 import React from "react";
-import { motion, useAnimation } from "framer-motion"
+import { motion, useAnimation } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 import {
   faHtml5,
   faCss3Alt,
@@ -11,82 +11,52 @@ import {
   faFigma,
 } from "@fortawesome/free-brands-svg-icons";
 
-const Competenze = () => {
+const Competenze = (props) => {
   const animation = useAnimation();
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: 0.5,
+    // threshold: 0.2,
   });
-  useEffect (() => {
-    console.log(inView)
-     if (inView) {
+  useEffect(() => {
+    console.log(inView);
+    if (inView) {
       animation.start({
         x: 0,
         transition: {
-          type: 'spring',
+          type: "spring",
           duration: 2,
         },
       });
     } else {
-      animation.start({ x: '-100vw' });
+      animation.start({ x: "-100vw" });
     }
   }, [inView]);
   return (
-    <section ref={ref} className="section-2  container" id="section-2">
-      <motion.h1 
-        animate={animation}
-      className="section-titolo mt-4 mb-4">Competenze</motion.h1>
-      <div className="flex icone">
-        <motion.div 
-        whileHover={{ scale: 1.2, rotate: 0 }}
-        className="icone_testo">
-          <FontAwesomeIcon
-            className="p-2"
-            icon={faHtml5}
-            style={{ color: "#d95204", fontSize: "8rem" }}
-          />
-          <p>HTML</p>
-        </motion.div>
-        <motion.div 
-        whileHover={{ scale: 1.2, rotate: 0 }}
-        className="icone_testo">
-          <FontAwesomeIcon
-            className="p-2"
-            icon={faCss3Alt}
-            style={{ color: "#d95204", fontSize: "8rem" }}
-          />
-          <p>CSS</p>
-        </motion.div>
-        <motion.div 
-        whileHover={{ scale: 1.2, rotate: 0 }}
-        className="icone_testo">
-          <FontAwesomeIcon
-            className="p-2"
-            icon={faReact}
-            style={{ color: "#d95204", fontSize: "8rem" }}
-          />
-          <p>REACT</p>
-        </motion.div>
-        <motion.div 
-        whileHover={{ scale: 1.2, rotate: 0 }}
-        className="icone_testo">
-          <FontAwesomeIcon
-            className="p-2"
-            icon={faBootstrap}
-            style={{ color: "#d95204", fontSize: "8rem" }}
-          />
-          <p>BOOTSTRAP</p>
-        </motion.div>
-        <motion.div 
-        whileHover={{ scale: 1.2, rotate: 0 }}
-        className="icone_testo">
-          <FontAwesomeIcon 
-          className="p-2"
-          icon={faFigma} 
-          style={{ color: "#d95204", fontSize: "8rem" }}
-           />
-          <p>FIGMA</p>
-        </motion.div>
+    <section ref={ref} className="section-2" id="section-2">
+      <div className="section-2-wrap contain">
+        <div className="section-2-progetti">
+          {props.data.map((item) => (
+            <motion.div animate={animation} key={item.id}>
+              <div className="stile-progetti">
+                <div className="progetto flex direction-column align-center justify-center">
+                  <div className="testo-progetto">
+                    <h2 className="titolo-progetto">{item.name}</h2>
+                    <h4 className="sottotitolo-progetto">HTML/CSS/JS</h4>
+                  </div>
+                  <img
+                    src={item.image}
+                    alt="progetto-1"
+                    className="img-progetto"
+                  />
+
+                  <a className="link-progetto " href={item.url}>
+                    link
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

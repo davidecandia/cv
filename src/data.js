@@ -1,34 +1,34 @@
-import progetto1 from "./assets/image/progetto1.jpg"
-import progetto2 from "./assets/image/progetto2.jpg"
-import progetto3 from "./assets/image/progetto3.jpg"
-import progetto4 from "./assets/image/progetto4.jpg"
+import progetto1_nuovo from "./assets/image/progetto1_nuovo.png"
+import progetto2_nuovo from "./assets/image/progetto2_nuovo.jpg"
+import progetto3_nuovo from "./assets/image/progetto3_nuovo.jpg"
+import progetto4_nuovo from "./assets/image/progetto4_nuovo.jpg"
 
 
 
 const data = [
     {
       id: 1,
-      name: 'Lista',
-      image: progetto1,
-      url: 'https://dexy98.github.io/lista/'
+      name: 'sinisky',
+      image: progetto4_nuovo,
+      url: 'https://dexy98.github.io/sinisky/',
     },
     {
       id: 2,
       name: 'meteo',
-      image: progetto2,
+      image: progetto2_nuovo,
       url: 'https://dexy98.github.io/meteo/',
     },
     {
       id: 3,
-      name: 'tecnostampa',
-      image: progetto3,
-      url: 'https://dexy98.github.io/tecnostampa/',
+      name: 'Lista',
+      image: progetto1_nuovo,
+      url: 'https://dexy98.github.io/lista/'
     },
     {
       id: 4,
-      name: 'sinisky',
-      image: progetto4,
-      url: 'https://dexy98.github.io/sinisky/',
+      name: 'tecnostampa',
+      image: progetto3_nuovo,
+      url: 'https://dexy98.github.io/tecnostampa/',
     },
     // Aggiungi altri prodotti qui...
   ];

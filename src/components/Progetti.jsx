@@ -8,7 +8,7 @@ const Progetti = (props) => {
   const animation = useAnimation();
   const { ref, inView, entry } = useInView({
     /* Optional options */
-    threshold: 0.5,
+    threshold: 0,
   });
   useEffect (() => {
     console.log(inView)
@@ -17,7 +17,7 @@ const Progetti = (props) => {
         x: 0,
         transition: {
           type: 'spring',
-          duration: 2,
+          duration: 1,
           delay: 0.2,
         },
       });

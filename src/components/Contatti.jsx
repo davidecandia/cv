@@ -10,6 +10,7 @@ const Contatti = () => {
             <textarea placeholder="Testo"></textarea>
             <input type="submit" value="Invia" class="btn"/>
         </form>
+
     </section>
   )
 }

@@ -1,0 +1,113 @@
+.logo{
+
+    & img{
+        width: 64px; height: 64px;
+        
+    }
+}
+/*! navbar */
+/* navbar */
+.fissa {
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    background: rgba(50, 50, 50, 0.70);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 80px;
+
+    position: absolute;
+    z-index: 300;
+    transition: opacity 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+        justify-content: space-between;
+    }
+}
+
+.navbar-links {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    display: inline-flex;
+    gap: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+
+}
+
+.navbar-barra{
+    color: white;
+}
+
+.navbar-barra:hover {
+    color: rgb(156, 156, 156);
+}
+
+
+
+.fissa {
+    position: fixed;
+    top: 0;
+}
+
+/*! fine navbar */
+/* menu smartphone */
+.nav{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(50, 50, 50, 0.90);
+    opacity: 0.9;
+    display:flex;
+    gap: 7rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    z-index: 50;
+    & a{
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+.nav.active{left: 0; z-index: 50;}
+
+
+@media screen and (max-width: 320px) {
+    .navbar-links{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .navbar-links{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .navbar-links{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .navbar-links{
+        display: non;
+    }
+
+
+   
+}
