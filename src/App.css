@@ -195,6 +195,10 @@ h4, p {
     box-shadow: 0.2rem 0.2rem 0.5rem #555;
     position: relative;
     overflow: hidden;
+    transition: all 1s;
+}
+.progetto:hover{
+    transform: scale(0.9);
 }
 
 .testo-progetto {
@@ -229,6 +233,7 @@ h4, p {
 
 .img-progetto {
     width: auto;
+    background-size: cover;
     transition: opacity 0.3s;
     transition: blur 0.3s;
     
@@ -245,12 +250,13 @@ h4, p {
     letter-spacing: 2px;
     color: white;
     text-shadow: 1px 1px 2px black;
+    border:solid 1px #222;
     background: var(--rosso-scuro);
     border-radius: 70px;
     padding: 14px 28px;
     position: absolute;
     bottom: -100%;
-    transition: bottom 0.3s;
+    transition: all 0.3s;
 
 }
 
