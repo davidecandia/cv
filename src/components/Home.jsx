@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Davide from "../assets/image/WhatsApp Davide fototessera.jpg";
 const Home = () => {
   return (
-    <header className="header relative" id="section-1">
+    <header className="header relative max-sm:mt-[80px]  " id="section-1">
       <div className="wrap-grid contain section-1 ">
         <div className="testo">
           <h1 className="text-[54px] font-bold leading-[64px] text-center">
