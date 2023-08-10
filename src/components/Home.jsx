@@ -47,7 +47,7 @@ const Home = () => {
       </div>
       <div className="blob max-md:hidden max">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#EDEDED" transform="translate(150 70)">
+          <path fill="#EDEDED" transform="translate(150 100)">
             <animate
               attributeName="d"
               dur={"10000ms"}
