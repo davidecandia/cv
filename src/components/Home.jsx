@@ -45,7 +45,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="blob max-md:hidden max">
+      <div className="blob max-md:hidden">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path fill="#EDEDED" transform="translate(150 100)">
             <animate

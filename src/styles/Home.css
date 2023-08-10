@@ -1,13 +1,15 @@
 .blob{
     position: absolute;
     top: -50px;
-    right: -50px;
-    width: 85%; height: 100%;
+    width: 100%; 
     opacity: 0.2;
     z-index: -1;
+
+
     & svg{
         filter:blur(6px);
-        
+
     }
+    
 }
 
