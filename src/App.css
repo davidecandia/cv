@@ -146,14 +146,14 @@ h4, p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-     & .wrap-grid{
-        display: grid;
-        /* gap: 20%; */
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr ;
-        
-     }
 }
+.wrap-grid{
+    display: grid;
+    /* gap: 20%; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    
+ }
 .img-persona{
     width: 355px;
     height: 355px;
@@ -367,32 +367,34 @@ h4, p {
 
 /* !responsive  */
 @media screen and (max-width: 320px) {
-    .testo{
-        & h1{
-            font-size: 44px;
-            line-height: normal;
-        }
-        & p{
-            font-size: 18px;
-        }
-        & span{
-            font-size: 12px;
-        }
+
+    .testo > h1{
+        font-size: 44px;
+        line-height: normal;
+    }
+    .testo > p{
+        font-size: 18px;
+    }
+    .home-span{
+        font-size: 13px;
+    }
+    .home-btn{
+        padding: 1rem 1.5rem;
     }
     .header {
         height: 100%;
         /* margin-top: 80px; */
         display: flex;
         justify-content: center;
-        align-items: center;
-         & .wrap-grid{
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr ;
-            grid-template-rows: 1fr ;
-            
-         }
+        align-items: center;   
     }
+    .wrap-grid{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        
+     }
     .img{
         justify-content: center;
     }
@@ -434,29 +436,29 @@ h4, p {
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
-    .testo{
-        & h1{
-            font-size: 44px;
-            line-height: normal;
-            
-        }
-        & p{
-            font-size: 18px;
-        }
-        & span{
-            font-size: 14px;
-        }
+    .testo > h1{
+        font-size: 44px;
+        line-height: normal;
+    }
+    .testo > p{
+        font-size: 18px;
+    }
+    .home-span{
+        font-size: 13px;
+    }
+    .home-btn{
+        padding: 1.2rem 1.5rem;
     }
     .header {
         height: 100%;
         margin-top: 80px;
-         & .wrap-grid{
-            
-            grid-template-columns: 1fr ;
-            grid-template-rows: 1fr ;
-            gap: 20px;
-         }
     }
+    .wrap-grid{
+            
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        gap: 20px;
+     }
     .img{
         justify-content: center;
     }
@@ -499,28 +501,26 @@ h4, p {
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
-    .testo{
-        & h1{
-            font-size: 44px;
-            line-height: normal;
-        }
-        & p{
-            font-size: 18px;
-        }
-        & span{
-            font-size: 14px;
-        }
+    .testo > h1{
+        font-size: 44px;
+        line-height: normal;
+    }
+    .testo > p{
+        font-size: 18px;
+    }
+    .home-span{
+        font-size: 14px;
     }
     .header {
         height: 100%;
-         & .wrap-grid{
-            display: grid;
-            gap: 10px;
-            grid-template-columns: 1fr ;
-            grid-template-rows: 1fr ;
-            
-         }
     }
+    .wrap-grid{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        
+     }
     .img{
         justify-content: center;
     }
@@ -558,17 +558,18 @@ h4, p {
 
 @media screen and (min-width: 601px) and (max-width: 768px) {
     .menu{display: none;}
-    .testo{
-        & h1{
-            font-size: 38px;
-            line-height: normal;
-        }
-        & p{
-            font-size: 18px;
-        }
-        & span{
-            font-size: 14px;
-        }
+    .testo > h1{
+        font-size: 38px;
+        line-height: normal;
+    }
+    .testo > p{
+        font-size: 18px;
+    }
+    .home-span{
+        font-size: 14px;
+    }
+    .home-btn{
+        padding: 1rem 1.5rem;
     }
     .img-persona{
         width: 250px;
@@ -599,17 +600,15 @@ h4, p {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .testo{
-        & h1{
-            font-size: 40px;
-            line-height: normal;
-        }
-        & p{
-            font-size: 20px;
-        }
-        & span{
-            font-size: 16px;
-        }
+    .testo > h1{
+        font-size: 40px;
+        line-height: normal;
+    }
+    .testo > p{
+        font-size: 20px;
+    }
+    .home-span{
+        font-size: 16px;
     }
     .img-persona{
         width: 280px;

@@ -27,8 +27,8 @@ const Home = () => {
           animate={{ opacity:1, x: "0" }}
           transition={{ duration: 2, delay: 1.6 }}
           className="flex justify-center">
-            <div class="px-12 py-4 bg-neutral-400 rounded-[70px] justify-items-center content-center justify-center items-center flex">
-              <span class="text-white text-lg font-semibold">
+            <div class=" home-btn px-12 py-4 bg-neutral-400 rounded-[70px] justify-items-center content-center justify-center items-center flex">
+              <span class="text-white text-lg font-semibold home-span">
                 📧 davidecandia@live.it
               </span>
             </div>

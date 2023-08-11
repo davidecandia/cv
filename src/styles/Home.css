@@ -4,12 +4,9 @@
     width: 100%; 
     opacity: 0.2;
     z-index: -1;
-
-
-    & svg{
-        filter:blur(6px);
-
-    }
     
+}
+.blob > svg{
+    filter:blur(6px);
 }
 
