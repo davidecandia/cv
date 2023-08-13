@@ -303,32 +303,35 @@ h4, p {
     width: 25%;
 }
 
-.form input,
-.form textarea {
+.form > input,
+.form > textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     border-radius: 18px;
     border: none;
-
+    color: black;
 }
 
-.form textarea {
+.form > textarea {
     max-width: 100%;
     height: 70px;
     max-height: 140px;
+
 }
 .btn{
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: white;
+    color: white !important; 
     text-shadow: 1px 1px 2px black;
     background: var(--rosso-scuro);
     border-radius: 70px;
     padding: 10px 20px;
-
-
+    transition: all 1s;
+}
+.btn:hover{
+    background: var(--rosso);
 }
 
 /* !fine section-4 */
@@ -432,6 +435,7 @@ h4, p {
 .form {
     width: 80%;
 }
+
 /* !fine section-4 */
 }
 
