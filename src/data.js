@@ -9,28 +9,32 @@ const data = [
     {
       id: 1,
       name: 'sinisky',
+      descrizione: 'React js',
       image: progetto4_nuovo,
       url: 'https://dexy98.github.io/sinisky/',
     },
     {
       id: 2,
       name: 'meteo',
+      descrizione: 'React js',
       image: progetto2_nuovo,
       url: 'https://dexy98.github.io/meteo/',
     },
     {
       id: 3,
       name: 'Lista',
+      descrizione: 'React js',
       image: progetto1_nuovo,
       url: 'https://dexy98.github.io/lista/'
     },
     {
       id: 4,
       name: 'tecnostampa',
+      descrizione: 'React js',
       image: progetto3_nuovo,
       url: 'https://dexy98.github.io/tecnostampa/',
     },
-    // Aggiungi altri prodotti qui...
+    // Aggiungi altri progetti qui...
   ];
 
   export default data

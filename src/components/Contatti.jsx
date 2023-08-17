@@ -8,7 +8,7 @@ const Contatti = () => {
             <input type="text" placeholder="Nome"/>
             <input type="email" placeholder="E-mail"/>
             <textarea placeholder="Testo"></textarea>
-            <input type="submit" value="Invia" class="btn"/>
+            <input type="submit" value="Invia" class="btn cursor-pointer"/>
         </form>
 
     </section>

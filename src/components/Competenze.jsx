@@ -41,7 +41,7 @@ const Competenze = (props) => {
                 <div className="progetto flex direction-column align-center justify-center">
                   <div className="testo-progetto">
                     <h2 className="titolo-progetto">{item.name}</h2>
-                    <h4 className="sottotitolo-progetto">HTML/CSS/JS</h4>
+                    <h4 className="sottotitolo-progetto uppercase">{item.descrizione}</h4>
                   </div>
                   <img
                     src={item.image}
