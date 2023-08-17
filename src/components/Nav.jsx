@@ -17,13 +17,13 @@ const Nav = () => {
           {click ? <FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} /> : <FontAwesomeIcon icon={faXmark} style={{color: "#ffffff",}} />}
         </div>
         <nav className={click ? "nav" : "nav active"}>
-        <a href="#section-1" className="navbar-barra">
+        <a onClick={handleClick} href="#section-1" className="navbar-barra">
             Home
           </a>
-          <a href="#section-2" className="navbar-barra">
+          <a onClick={handleClick} href="#section-2" className="navbar-barra">
             Progetti
           </a>
-          <a href="#section-4" className="navbar-barra">
+          <a onClick={handleClick} href="#section-4" className="navbar-barra">
             Contatti
           </a>
 
