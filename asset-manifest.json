@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cv/static/css/main.1279d2ea.css",
-    "main.js": "/cv/static/js/main.608d1db8.js",
-    "static/media/Davide foto.png": "/cv/static/media/Davide foto.c812890fc6318ddbbd1d.png",
+    "main.js": "/cv/static/js/main.56a5539d.js",
+    "static/media/Davide foto.png": "/cv/static/media/Davide foto.f6fc0e89c7c500881cd1.png",
     "static/media/progetto3_nuovo.jpg": "/cv/static/media/progetto3_nuovo.7d4674e736c961de0575.jpg",
     "static/media/progetto4_nuovo.jpg": "/cv/static/media/progetto4_nuovo.5ff1cf7859957aa48a63.jpg",
     "static/media/progetto2_nuovo.jpg": "/cv/static/media/progetto2_nuovo.67c7c8bf4f61bd15f24b.jpg",
@@ -10,10 +10,10 @@
     "static/media/logo_davide.png": "/cv/static/media/logo_davide.2b42a099829c7692e407.png",
     "index.html": "/cv/index.html",
     "main.1279d2ea.css.map": "/cv/static/css/main.1279d2ea.css.map",
-    "main.608d1db8.js.map": "/cv/static/js/main.608d1db8.js.map"
+    "main.56a5539d.js.map": "/cv/static/js/main.56a5539d.js.map"
   },
   "entrypoints": [
     "static/css/main.1279d2ea.css",
-    "static/js/main.608d1db8.js"
+    "static/js/main.56a5539d.js"
   ]
 }
