@@ -198,7 +198,7 @@ h4, p {
     transition: all 1s;
 }
 .progetto:hover{
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .testo-progetto {
@@ -212,7 +212,7 @@ h4, p {
 
 .progetto:hover .testo-progetto {
     top: 30px;
-    transition: top 0.3s 0.3s;
+    transition: top 0.2s 0.2s;
 }
 
 .titolo-progetto {
@@ -234,8 +234,8 @@ h4, p {
 .img-progetto {
     width: auto;
     background-size: cover;
-    transition: opacity 0.3s;
-    transition: blur 0.3s;
+    transition: opacity 0.2s;
+    transition: blur 0.2s;
     
 }
 
@@ -256,13 +256,13 @@ h4, p {
     padding: 14px 28px;
     position: absolute;
     bottom: -100%;
-    transition: all 0.3s;
+    transition: all 0.2s;
 
 }
 
 .progetto:hover .link-progetto {
     bottom: 60px;
-    transition: bottom 0.3s 0.3s;
+    transition: bottom 0.2s 0.2s;
 }
 
 .link-progetto:hover {
