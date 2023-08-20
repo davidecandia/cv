@@ -2,7 +2,7 @@ import React from 'react';
 
 const DownloadButton = () => {
   const handleDownload = () => {
-    const pdfPath = '/Curriculum.pdf'; // Percorso al tuo file PDF nella cartella public
+    const pdfPath = '/cv/Curriculum.pdf'; // Percorso al tuo file PDF nella cartella public
     const link = document.createElement('a');
     link.href = pdfPath;
     link.download = 'Curriculum.pdf';
