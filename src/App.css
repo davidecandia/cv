@@ -154,11 +154,17 @@ h4, p {
     grid-template-rows: 1fr ;
     
  }
-.img-persona{
-    width: 355px;
-    height: 355px;
-    border-radius: 70px;
+ .img{
 
+ }
+.img-persona{
+    /* width: 355px;
+    height: 355px; */
+    height: 355px;width: auto;
+    background-size:cover;
+
+    /* border-radius: 70px; */
+    border-radius: 9999px;
 }
 
 
@@ -404,7 +410,7 @@ h4, p {
     .img-persona{
         width: 230px;
         height: 230px;
-        border-radius: 50px;
+        border-radius: 100%;
         margin-bottom: 100px;
     }
     /* fine home */
@@ -469,7 +475,7 @@ h4, p {
     .img-persona{
         width: 230px;
         height: 230px;
-        border-radius: 50px;
+        border-radius: 100%;
         margin-bottom: 100px;
     }
         /* fine home */
@@ -531,7 +537,7 @@ h4, p {
     .img-persona{
         width: 355px;
         height: 355px;
-        border-radius: 70px;
+        border-radius: 100%;
         margin-bottom: 100px;
     }
     /* fine home */
@@ -578,7 +584,7 @@ h4, p {
     .img-persona{
         width: 250px;
         height: 250px;
-        border-radius: 70px;
+        border-radius: 100%;
     
     }
         /* fine home */
@@ -617,7 +623,7 @@ h4, p {
     .img-persona{
         width: 280px;
         height: 280px;
-        border-radius: 70px;
+        border-radius: 100%;
     
     }
      /* fine home */

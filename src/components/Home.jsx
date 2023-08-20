@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Home.css";
-import Davide from "../assets/image/WhatsApp Davide fototessera.jpg";
+import Davide from "../assets/image/Davide foto.png";
 import DownloadButton from "./DownloadButton";
 const Home = () => {
   return (
@@ -37,7 +37,7 @@ const Home = () => {
           </motion.div>
         </motion.div>
 {/* immagine Davide */}
-        <div className="img flex justify-end items-center">
+        <div className="img flex justify-end items-center bg-cover">
           <motion.img 
           initial={{ opacity:0, y:"10%", }}
           animate={{ opacity:1, x: "0", y:"0" }}
