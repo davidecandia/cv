@@ -21,14 +21,14 @@ const Competenze = (props) => {
     console.log(inView);
     if (inView) {
       animation.start({
-        x: 0,
+        y: 0,
         transition: {
           type: "spring",
           duration: 2,
         },
       });
     } else {
-      animation.start({ x: "-100vw" });
+      animation.start({ y: "10%" });
     }
   }, [inView]);
   return (
@@ -49,7 +49,7 @@ const Competenze = (props) => {
                     className="img-progetto"
                   />
 
-                  <a className="link-progetto " href={item.url}>
+                  <a className="link-progetto uppercase" href={item.url}>
                     link
                   </a>
                 </div>

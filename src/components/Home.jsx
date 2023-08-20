@@ -2,43 +2,45 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Home.css";
 import Davide from "../assets/image/WhatsApp Davide fototessera.jpg";
+import DownloadButton from "./DownloadButton";
 const Home = () => {
   return (
     <header className="header relative max-sm:mt-[80px]  " id="section-1">
       <div className="wrap-grid contain section-1 ">
         <motion.div 
-          initial={{ opacity:0, x:"-100%", }}
-          animate={{ opacity:1, x: "0", }}
-          transition={{ duration: 2, delay: 1 }}
+          initial={{ opacity:0, y:"10%", }}
+          animate={{ opacity:1, x: "0", y:"0" }}
+          transition={{ duration: 1, delay: 1 }}
         className="testo">
           <h1 className="text-[54px] font-bold leading-[64px] text-center">
-            👋🏻, Sono Davide Candia <br /> Front end Developer
+            👋🏻 Sono Davide Candia <br /> Front end Developer
           </h1>
           <motion.p 
-            initial={{ opacity:0, x:"-100%" }}
-            animate={{ opacity:1, x: "0" }}
-            transition={{ duration: 2, delay: 1.3 }}
+          initial={{ opacity:0, y:"10%", }}
+          animate={{ opacity:1, x: "0", y:"0" }}
+            transition={{ duration: 1, delay: 1.3 }}
           className=" text-center text-neutral-400 text-[28px] font-semibold leading-7 ">
-            Sviluppo base con REACT.JS <br /> (HTML, CSS, JS, TAILWIND,
-            BOOTSTRAP, FIGMA)
+            Sviluppo base con REACT.JS <br /> HTML, CSS, JS, TAILWIND,
+            BOOTSTRAP, FIGMA
           </motion.p>
           <motion.div 
-          initial={{ opacity:0, x:"-100%" }}
-          animate={{ opacity:1, x: "0" }}
-          transition={{ duration: 2, delay: 1.6 }}
+          initial={{ opacity:0, y:"10%", }}
+          animate={{ opacity:1, x: "0", y:"0" }}
+          transition={{ duration: 1, delay: 1.6 }}
           className="flex justify-center">
             <div class=" home-btn px-12 py-4 bg-neutral-400 rounded-[70px] justify-items-center content-center justify-center items-center flex">
-              <span class="text-white text-lg font-semibold home-span">
+              {/* <span class="text-white text-lg font-semibold home-span">
                 📧 davidecandia@live.it
-              </span>
+              </span> */}
+              <DownloadButton/>
             </div>
           </motion.div>
         </motion.div>
 {/* immagine Davide */}
         <div className="img flex justify-end items-center">
           <motion.img 
-           initial={{ scale: 0, borderRadius: 200 }}
-           animate={{ scale: 1, borderRadius: 50 }}
+          initial={{ opacity:0, y:"10%", }}
+          animate={{ opacity:1, x: "0", y:"0" }}
            transition={{
              delay: 1,
              type: "spring",
@@ -47,11 +49,11 @@ const Home = () => {
            }}
           className="img-persona z-50" src={Davide} alt="Davide" />
         </div>
-
+{/* fine immagine Davide */}
         <motion.div 
-         initial={{ opacity:0, x:"-100%" }}
-         animate={{ opacity:1, x: "0" }}
-         transition={{ duration: 2, delay: 2 }}
+          initial={{ opacity:0, y:"10%", }}
+          animate={{ opacity:1, x: "0", y:"0" }}
+         transition={{ duration: 1, delay: 2 }}
         className="sotto absolute bottom-1">
           <div className="flex gap-2">
             <svg
