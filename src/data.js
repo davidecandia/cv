@@ -1,6 +1,6 @@
 import progetto1_nuovo from "./assets/image/progetto1_nuovo.png"
-import progetto2_nuovo from "./assets/image/progetto2_nuovo.png"
-import progetto3_nuovo from "./assets/image/progetto3_nuovo.png"
+import progetto2_nuovo from "./assets/image/progetto2_nuovo.jpg"
+import progetto3_nuovo from "./assets/image/progetto3_nuovo.jpg"
 import progetto4_nuovo from "./assets/image/progetto4_nuovo.jpg"
 
 
