@@ -49,7 +49,7 @@ const Competenze = (props) => {
                     className="img-progetto"
                   />
 
-                  <a className="link-progetto uppercase" href={item.url}>
+                  <a className="link-progetto uppercase" href={item.url} target="blank">
                     link
                   </a>
                 </div>
