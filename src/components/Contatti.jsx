@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contatti = () => {
+  const [validazione , setValidazione] = useState('')
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,8 +18,7 @@ const Contatti = () => {
           console.log(error.text);
       });
   };
-
-  const urlForms = "https://docs.google.com/forms/d/e/1FAIpQLSf0TUUp_EY2KH5wQPhM7l3Jppch07f8KT8F5zjPRS79nr0crg/viewform?embedded=true" 
+  const isVAlid = validazione.length > 0 
   return (
     <section class="section-4 flex direction-column align-center justify-center " id="section-4">
         <h1 class="section-titolo titolo-section-4 mb-3">Contatti</h1>
@@ -30,12 +31,12 @@ const Contatti = () => {
 
           <form ref={form} onSubmit={sendEmail} class="form flex direction-column">
             <label>Nome</label>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" onChange={(e)=>setValidazione(e.currentTarget.value)} required/>
             <label>Email</label>
             <input type="email" name="user_email" />
             <label>Messaggio</label>
-            <textarea name="message" />
-            <input type="submit" value="INVIA" class="btn cursor-pointer"/>
+            <textarea name="message" onChange={(e)=>setValidazione(e.currentTarget.value)} required />
+            <button type="submit" value="INVIA" class="btn cursor-pointer" disabled={!isVAlid}>INVIA</button>
           </form>
 
          
