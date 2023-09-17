@@ -20,15 +20,15 @@ const Home = () => {
           animate={{ opacity:1, x: "0", y:"0" }}
             transition={{ duration: 1, delay: 1.3 }}
           className=" text-center text-neutral-400 text-[28px] font-semibold leading-7 ">
-            Sviluppo base con REACT.JS <br /> HTML, CSS, JS, TAILWIND,
-            BOOTSTRAP, FIGMA
+            Tecnologie: HTML | CSS | JS <br /> REACT.JS | REDUX |  RTK QUERY | TYPESCRIPT | TAILWIND |
+            BOOTSTRAP | FIGMA
           </motion.p>
           <motion.div 
           initial={{ opacity:0, y:"10%", }}
           animate={{ opacity:1, x: "0", y:"0" }}
           transition={{ duration: 1, delay: 1.6 }}
           className="flex justify-center">
-            <div class=" home-btn px-12 py-4 bg-neutral-400 rounded-[70px] justify-items-center content-center justify-center items-center flex">
+            <div class=" home-btn px-12 py-4 bg-neutral-400 hover:bg-neutral-500 rounded-[70px] justify-items-center content-center justify-center items-center flex">
               {/* <span class="text-white text-lg font-semibold home-span">
                 📧 davidecandia@live.it
               </span> */}

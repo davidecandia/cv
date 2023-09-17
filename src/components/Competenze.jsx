@@ -46,7 +46,7 @@ const Competenze = (props) => {
                   <img
                     src={item.image}
                     alt="progetto-1"
-                    className="img-progetto"
+                    className="img-progetto object-cover"
                   />
 
                   <a className="link-progetto uppercase" href={item.url} target="blank">

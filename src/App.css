@@ -176,7 +176,7 @@ h4, p {
 .section-2 {
     width: 100%;
     height: 100%;
-    margin: 100px 0;
+    margin: 100px auto;
     display: flex;
     justify-content: center;
 }
@@ -195,9 +195,23 @@ h4, p {
     flex-wrap: wrap;
 }
 
+.progetto::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #131313;
+    opacity: 0;
+    height: 100%;
+    z-index: -1;
+}
+.progetto:hover::before{
+    opacity: 0.8;
+    z-index: 1;
+}
 .progetto {
     margin: 10px;
-    background-color: #fff;
+    background-color: #131313;
     box-shadow: 0.2rem 0.2rem 0.5rem #555;
     position: relative;
     overflow: hidden;
@@ -269,12 +283,14 @@ h4, p {
 .progetto:hover .link-progetto {
     bottom: 60px;
     transition: bottom 0.2s 0.2s;
+    z-index: 10;
 }
 
 .link-progetto:hover {
     background: var(--rosso);
     transform: scale(1.2);
     transition: all .52s cubic-bezier(.215, .61, .355, 1);
+
 }
 
 /* !fine section-2 */
@@ -296,6 +312,7 @@ h4, p {
     width: 100%;
     height: 80%;
     background-color: #555;
+    padding: 50px 0;
 }
 
 .titolo-section-4 {

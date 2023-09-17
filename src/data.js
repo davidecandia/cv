@@ -1,21 +1,29 @@
 import progetto1_nuovo from "./assets/image/progetto1_nuovo.png"
-import progetto2_nuovo from "./assets/image/progetto2_nuovo.jpg"
+import progetto2_nuovo from "./assets/image/progetto2_nuovo.png"
 import progetto3_nuovo from "./assets/image/progetto3_nuovo.jpg"
 import progetto4_nuovo from "./assets/image/progetto4_nuovo.jpg"
 import progetto5_nuovo from "./assets/image/progetto5_nuovo.png"
+import progetto6_nuovo from "./assets/image/progetto6_nuovo.png"
 
 
 
 const data = [
    {
-      id: 1,
+      id: 6,
+      name: 'E-shop',
+      descrizione: 'Sviluppato con React e tailwind per il css. Fake Store API gestita con RTK query. Gestione degli stati con redux toolkit e typescript per migliore gestione del codice ',
+      image: progetto6_nuovo,
+      url: 'https://dexy98.github.io/e-shop/',
+   },
+   {
+      id: 5,
       name: 'Movies',
       descrizione: 'sviluppato con React e tailwind per il css con diverse chiamate API TMDB ',
       image: progetto5_nuovo,
       url: 'https://dexy98.github.io/movies/',
     },
     {
-      id: 2,
+      id: 4,
       name: 'meteo',
       descrizione: 'React js con API openweathermap',
       image: progetto2_nuovo,
@@ -29,14 +37,14 @@ const data = [
       url: 'https://dexy98.github.io/sinisky/',
     },
     {
-      id: 4,
+      id: 2,
       name: 'Lista',
       descrizione: 'React js',
       image: progetto1_nuovo,
       url: 'https://dexy98.github.io/lista/'
     },
     {
-      id: 5,
+      id: 1,
       name: 'tecnostampa',
       descrizione: 'React js',
       image: progetto3_nuovo,
