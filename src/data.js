@@ -4,10 +4,18 @@ import progetto3_nuovo from "./assets/image/progetto3_nuovo.jpg"
 import progetto4_nuovo from "./assets/image/progetto4_nuovo.jpg"
 import progetto5_nuovo from "./assets/image/progetto5_nuovo.png"
 import progetto6_nuovo from "./assets/image/progetto6_nuovo.png"
+import progetto7_nuovo from "./assets/image/progetto7_nuovo.jpg"
 
 
 
 const data = [
+    {
+    id: 7,
+    name: 'Dog',
+    descrizione: 'Sviluppato con React e Typescript. Tailwind per il css. API gestita con RTK query. ',
+    image: progetto7_nuovo,
+    url: 'https://dexy98.github.io/dog/',
+    },
    {
       id: 6,
       name: 'E-shop',
