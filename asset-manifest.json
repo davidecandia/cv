@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.534d2289.css",
-    "main.js": "/cv/static/js/main.f05cceee.js",
+    "main.css": "/cv/static/css/main.e5b81980.css",
+    "main.js": "/cv/static/js/main.d2202458.js",
     "static/media/Davide foto.jpg": "/cv/static/media/Davide foto.299185c2bc9aaa730005.jpg",
     "static/media/progetto3_nuovo.jpg": "/cv/static/media/progetto3_nuovo.7d4674e736c961de0575.jpg",
     "static/media/progetto4_nuovo.jpg": "/cv/static/media/progetto4_nuovo.5ff1cf7859957aa48a63.jpg",
     "static/media/progetto5_nuovo.png": "/cv/static/media/progetto5_nuovo.c24ac03c0556e0b38e84.png",
-    "static/media/progetto2_nuovo.jpg": "/cv/static/media/progetto2_nuovo.67c7c8bf4f61bd15f24b.jpg",
+    "static/media/progetto6_nuovo.png": "/cv/static/media/progetto6_nuovo.f92194572cf43d169421.png",
+    "static/media/progetto2_nuovo.png": "/cv/static/media/progetto2_nuovo.7c70d24f589372eeef67.png",
     "static/media/progetto1_nuovo.png": "/cv/static/media/progetto1_nuovo.dd5f1429b402b5137b9f.png",
     "static/media/logo_davide.png": "/cv/static/media/logo_davide.2b42a099829c7692e407.png",
     "index.html": "/cv/index.html",
-    "main.534d2289.css.map": "/cv/static/css/main.534d2289.css.map",
-    "main.f05cceee.js.map": "/cv/static/js/main.f05cceee.js.map"
+    "main.e5b81980.css.map": "/cv/static/css/main.e5b81980.css.map",
+    "main.d2202458.js.map": "/cv/static/js/main.d2202458.js.map"
   },
   "entrypoints": [
-    "static/css/main.534d2289.css",
-    "static/js/main.f05cceee.js"
+    "static/css/main.e5b81980.css",
+    "static/js/main.d2202458.js"
   ]
 }
