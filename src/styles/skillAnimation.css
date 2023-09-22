@@ -17,6 +17,7 @@
     height: 40em;
     list-style: none;
     font-size: 1.1em;
+    position: relative;
 }
 
 .orbit-wrap>li {
