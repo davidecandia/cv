@@ -1,15 +1,7 @@
 import React from "react";
 import { motion, useAnimation } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import {
-  faHtml5,
-  faCss3Alt,
-  faReact,
-  faBootstrap,
-  faFigma,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Competenze = (props) => {
   const animation = useAnimation();
@@ -41,15 +33,20 @@ const Competenze = (props) => {
                 <div className="progetto flex direction-column align-center justify-center">
                   <div className="testo-progetto">
                     <h2 className="titolo-progetto">{item.name}</h2>
-                    <h4 className="sottotitolo-progetto uppercase">{item.descrizione}</h4>
+                    <h4 className="sottotitolo-progetto uppercase">
+                      {item.descrizione}
+                    </h4>
                   </div>
                   <img
                     src={item.image}
                     alt="progetto-1"
-                    className="img-progetto object-cover"
+                    className="img-progetto object-cover bg-cover"
                   />
 
-                  <a className="link-progetto uppercase" href={item.url} target="blank">
+                  <a
+                    className="link-progetto uppercase"
+                    href={item.url}
+                    target="blank">
                     link
                   </a>
                 </div>

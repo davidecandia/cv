@@ -6,18 +6,29 @@ import Competenze from './components/Competenze';
 import data from './data';
 import Contatti from './components/Contatti';
 import Footer from './components/Footer';
+import Loading from './components/Loading';
 
 function App() {
   const [progetti, setprogetti] = useState(data);
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    window.onload = () => {
+      setLoading(false);
+    };
+  }, []);
 
   return (
     <>
-      <Nav/>
-      <Home />
-      <Competenze data={progetti} />
-      <Contatti />
-      <Footer />
+      {loading ? <Loading /> : (
+        <>
+          <Nav />
+          <Home />
+          <Competenze data={progetti} />
+          <Contatti />
+          <Footer />
+        </>
+      )}
     </>
   );
 }
