@@ -73,6 +73,7 @@ const Home = () => {
           className="sotto ">
           <div className="flex gap-2">
             <svg
+              className=" animate-bounce"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="33"

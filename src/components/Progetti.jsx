@@ -25,36 +25,19 @@ const Progetti = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
   return (
-    <section ref={ref} className="section-2" id="section-2">
-      <div className="section-2-wrap contain">
-        <div className="section-2-progetti">
-          {props.data.map((item) => (
-            <motion.div animate={animation} key={item.id}>
-              <div className="stile-progetti">
-                <div className="progetto flex direction-column align-center justify-center">
-                  <div className="testo-progetto">
-                    <h2 className="titolo-progetto">{item.name}</h2>
-                    <h4 className="sottotitolo-progetto uppercase">
-                      {item.descrizione}
-                    </h4>
-                  </div>
-                  <img
-                    src={item.image}
-                    alt="progetto-1"
-                    className="img-progetto object-cover bg-cover"
-                  />
-
-                  <a
-                    className="link-progetto uppercase"
-                    href={item.url}
-                    target="blank">
-                    link
-                  </a>
-                </div>
+    <section ref={ref} className="contain py-28" id="section-2">
+      <div className="section-2-progetti">
+        {props.data.map((item) => (
+          <motion.div className="progetto" animate={animation} key={item.id}>
+            <a className="" href={item.url} target="blank">
+              <img src={item.image} alt={item.name} className="img-progetto" />
+              <div className="testo-progetto">
+                <h2 className="titolo-progetto uppercase">{item.name}</h2>
+                <p className="sottotitolo-progetto">{item.descrizione}</p>
               </div>
-            </motion.div>
-          ))}
-        </div>
+            </a>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
