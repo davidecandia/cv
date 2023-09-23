@@ -593,7 +593,7 @@ h4, p {
     /* !fine section-4 */
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
     .testo>h1 {
         font-size: 40px;
         line-height: normal;
