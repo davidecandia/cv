@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/Home.css";
-import Davide from "../assets/image/Davide foto.jpg";
 import DownloadButton from "./DownloadButton";
 import SkillAnimation from "./SkillAnimation";
 const Home = () => {
