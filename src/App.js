@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './App.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
-import Competenze from './components/Competenze';
+import Progetti from './components/Progetti';
 import data from './data';
 import Contatti from './components/Contatti';
 import Footer from './components/Footer';
 
 function App() {
-  const [progetti, setprogetti] = useState(data);
+  const [progetti] = useState(data);
 
 
   return (
@@ -16,7 +16,7 @@ function App() {
       <>
         <Nav />
         <Home />
-        <Competenze data={progetti} />
+        <Progetti data={progetti} />
         <Contatti />
         <Footer />
       </>
