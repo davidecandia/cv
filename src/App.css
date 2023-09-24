@@ -141,7 +141,7 @@ h4, p {
 /* !section-1 home*/
 .header {
     width: 100%;
-    height: 100svh;
+    height: 100dvh;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +230,7 @@ h4, p {
 /* !section-3 */
 .section-3 {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
 
 
 }
@@ -295,7 +295,7 @@ h4, p {
 /* ! section-5 footer */
 .section-5 {
     width: 100%;
-    height: 30vh;
+    height: 30dvh;
     background-color: #222;
 }
 
