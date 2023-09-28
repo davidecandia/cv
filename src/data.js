@@ -6,10 +6,18 @@ import meteo from "./assets/image/meteo.jpg"
 import sinisky from "./assets/image/sinisky.jpg"
 import lista from "./assets/image/lista.jpg"
 import tecnostampa from "./assets/image/tecnostampa.jpg"
+import spotify_clone from "./assets/image/clone-spotify.jpg"
 
 
 
 const data = [
+  {
+    id: 9,
+    name: 'Spotify-clone',
+    descrizione: 'Sviluppato con Vite. Tailwind per il css. Clicca per visionare codice su GitHub. ',
+    image: spotify_clone,
+    url: 'https://github.com/Dexy98/Spotify-clone',
+  },
   {
     id: 8,
     name: 'Cocktail',
