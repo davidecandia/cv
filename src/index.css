@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -10,6 +11,7 @@ body {
   /* background-color: rgba(140, 3, 3,0.7); */
   background: #202020;
 }
+
 /* ! Reset */
 body, html {
   font-size: 16px;
@@ -46,8 +48,34 @@ img {
 }
 
 
-.contain{
+.contain {
   max-width: 80%;
   margin: 0 auto;
   width: 100%;
+}
+
+/* scrollBar stile. solo per chrome */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a0;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #808080;
 }
