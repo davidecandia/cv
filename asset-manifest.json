@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cv/static/css/main.7cf37b37.css",
-    "main.js": "/cv/static/js/main.26bb8518.js",
+    "main.js": "/cv/static/js/main.80b33c50.js",
     "static/media/Davide foto.jpg": "/cv/static/media/Davide foto.299185c2bc9aaa730005.jpg",
     "static/media/dog.jpg": "/cv/static/media/dog.c0b0855fd9ce7012ec85.jpg",
     "static/media/cocktail.jpg": "/cv/static/media/cocktail.d0931606ad6cd86f9317.jpg",
@@ -11,14 +11,15 @@
     "static/media/sinisky.jpg": "/cv/static/media/sinisky.9d4f5e404700b4972294.jpg",
     "static/media/movies.jpg": "/cv/static/media/movies.c22e955d0309ebeccee4.jpg",
     "static/media/meteo.jpg": "/cv/static/media/meteo.568151c0cbb24e18fb16.jpg",
+    "static/media/notes.jpg": "/cv/static/media/notes.194f27582b62df0349cf.jpg",
     "static/media/lista.jpg": "/cv/static/media/lista.7bdbb16120d7d1d84f94.jpg",
     "static/media/logo_davide.png": "/cv/static/media/logo_davide.2b42a099829c7692e407.png",
     "index.html": "/cv/index.html",
     "main.7cf37b37.css.map": "/cv/static/css/main.7cf37b37.css.map",
-    "main.26bb8518.js.map": "/cv/static/js/main.26bb8518.js.map"
+    "main.80b33c50.js.map": "/cv/static/js/main.80b33c50.js.map"
   },
   "entrypoints": [
     "static/css/main.7cf37b37.css",
-    "static/js/main.26bb8518.js"
+    "static/js/main.80b33c50.js"
   ]
 }
