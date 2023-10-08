@@ -7,10 +7,17 @@ import sinisky from "./assets/image/sinisky.jpg"
 import lista from "./assets/image/lista.jpg"
 import tecnostampa from "./assets/image/tecnostampa.jpg"
 import spotify_clone from "./assets/image/clone-spotify.jpg"
-
+import notes from "./assets/image/notes.jpg"
 
 
 const data = [
+  {
+    id: 10,
+    name: 'Notes',
+    descrizione: 'MERN, MongoDB: Come database,Express.js: Come framework per il server, React: Per il frontend, Node.js: Per l\'esecuzione del server. Typescript sia per frontEnd che BackEnd. Vite come bundler di react. Css con tailwind + gestione delle richieste al server con Redux query.',
+    image: notes,
+    url: 'https://github.com/Dexy98/todo_list',
+  },
   {
     id: 9,
     name: 'Spotify-clone',
