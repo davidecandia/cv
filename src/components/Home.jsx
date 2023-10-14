@@ -5,7 +5,9 @@ import DownloadButton from "./DownloadButton";
 import SkillAnimation from "./SkillAnimation";
 const Home = () => {
   return (
-    <header className="header relative max-sm:mt-[80px]  " id="section-1">
+    <header
+      className="header relative mt-[80px] max-sm:mt-[80px]  "
+      id="section-1">
       <div className="wrap-grid items-center contain section-1 ">
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
