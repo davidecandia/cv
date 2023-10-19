@@ -50,7 +50,7 @@ ul[class^=ring] li {
 
 .ring-0 {
     width: 25em;
-    height: 25em;
+    aspect-ratio: 1;
     -webkit-animation: clockwiseRotate 35s linear infinite;
     animation: clockwiseRotate 35s linear infinite;
 }
@@ -85,8 +85,8 @@ ul[class^=ring] li {
 }
 
 .ring-1 {
-    width: 20em;
-    height: 20em;
+    width: 21.5em;
+    aspect-ratio: 1;
     -webkit-animation: clockwiseRotate 30s linear infinite;
     animation: clockwiseRotate 30s linear infinite;
 }
@@ -97,15 +97,15 @@ ul[class^=ring] li {
 }
 
 .ring-1>*:nth-of-type(1) {
-    transform: rotate(126.6666666667deg) translate(10em) rotate(-126.6666666667deg);
+    transform: rotate(126.6666666667deg) translate(10.8em) rotate(-126.6666666667deg);
 }
 
 .ring-1>*:nth-of-type(2) {
-    transform: rotate(253.3333333333deg) translate(10em) rotate(-253.3333333333deg);
+    transform: rotate(253.3333333333deg) translate(10.8em) rotate(-253.3333333333deg);
 }
 
 .ring-1>*:nth-of-type(3) {
-    transform: rotate(380deg) translate(10em) rotate(-380deg);
+    transform: rotate(380deg) translate(10.8em) rotate(-380deg);
     filter: contrast(2);
 }
 
@@ -124,8 +124,8 @@ ul[class^=ring] li {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 1.6em;
-    height: 1.6em;
+    width: 1.8em;
+    height: 1.8em;
     margin: -0.8em;
 }
 
@@ -295,10 +295,10 @@ ul[class^=ring] li {
 }
 
 
-@media screen and (min-width: 1025px) {
+/* @media screen and (min-width: 1025px) {
     .wrap-grid {
         margin-top: 80px;
     }
-}
+} */
 
 /* !fine responsive */

@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Future';
+  src: local('Future'), url('assets/fonts/OtherFutureDemoRegular-Yz6Kq.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo span {
+  font-family: 'Future', 'Montserrat', sans-serif;
+}
+
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;

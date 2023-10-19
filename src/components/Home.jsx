@@ -5,7 +5,7 @@ import DownloadButton from "./DownloadButton";
 import SkillAnimation from "./SkillAnimation";
 const Home = () => {
   return (
-    <header className="header relative max-sm:mt-[80px]  " id="section-1">
+    <header className="header relative mt-[80px]  " id="section-1">
       <div className="wrap-grid items-center contain section-1 ">
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
@@ -20,8 +20,8 @@ const Home = () => {
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.3 }}
             className=" text-center text-neutral-400 text-[28px] font-semibold leading-7 ">
-            Tecnologie: HTML | CSS | JS <br /> REACT.JS | REDUX | RTK QUERY |
-            TYPESCRIPT | TAILWIND | BOOTSTRAP | FIGMA
+            Html | Css | Js <br /> React.Js | Redux | RTK Query | Typescript |
+            Tailwind | Bootstrap | Figma
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: "10%" }}
@@ -65,27 +65,6 @@ const Home = () => {
           </motion.div>
         </div>
         {/* fine immagine Davide */}
-        <motion.div
-          initial={{ opacity: 0, y: "10%" }}
-          animate={{ opacity: 1, x: "0", y: "0" }}
-          transition={{ duration: 1, delay: 2 }}
-          className="sotto ">
-          <div className="flex gap-2">
-            <svg
-              className=" animate-bounce"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="33"
-              viewBox="0 0 16 33"
-              fill="none">
-              <path
-                d="M7.29289 32.7071C7.68342 33.0976 8.31658 33.0976 8.70711 32.7071L15.0711 26.3431C15.4616 25.9526 15.4616 25.3195 15.0711 24.9289C14.6805 24.5384 14.0474 24.5384 13.6569 24.9289L8 30.5858L2.34315 24.9289C1.95262 24.5384 1.31946 24.5384 0.928933 24.9289C0.538409 25.3195 0.538409 25.9526 0.928933 26.3431L7.29289 32.7071ZM7 4.37114e-08L7 32L9 32L9 -4.37114e-08L7 4.37114e-08Z"
-                fill="#DEDEDE"
-              />
-            </svg>
-            <h4 className=" uppercase text-xl font-bold">Progetti</h4>
-          </div>
-        </motion.div>
       </div>
       {/* palla dietro animata  */}
       <div className="blob max-md:hidden">

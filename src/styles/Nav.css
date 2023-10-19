@@ -1,12 +1,13 @@
-.logo{
-    width: 64px; height: 64px;z-index: 100;
-}
-.logo img{
-    width: 64px; height: 64px;z-index: 100;
-}
-.menu{
+.logo {
+    /* width: 64px;
+    height: 64px; */
     z-index: 100;
 }
+
+.menu {
+    z-index: 100;
+}
+
 /*! navbar */
 /* navbar */
 .fissa {
@@ -30,7 +31,8 @@
 
 
 }
-.navbar > div{
+
+.navbar>div {
     justify-content: space-between;
 
 }
@@ -42,12 +44,12 @@
     display: inline-flex;
     gap: 20px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     transition: color 0.2s;
 
 }
 
-.navbar-barra{
+.navbar-barra {
     color: white;
 }
 
@@ -65,12 +67,12 @@
 /*! fine navbar */
 /* menu smartphone */
 
-.nav{
+.nav {
     width: 100%;
     height: 100vh;
-    background-color:rgba(50, 50, 50, 0.90);
+    background-color: rgba(50, 50, 50, 0.90);
     opacity: 0.9;
-    display:flex;
+    display: flex;
     gap: 7rem;
     flex-direction: column;
     justify-content: center;
@@ -81,36 +83,36 @@
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
     z-index: 50;
 }
-.nav > a{
+
+.nav>a {
     font-size: 40px;
     font-weight: bold;
 }
-.nav.active{left: 0; z-index: 50;}
+
+.nav.active {
+    left: 0;
+    z-index: 50;
+}
 
 
 @media screen and (max-width: 320px) {
-    .navbar-links{
+    .navbar-links {
         display: none;
     }
 
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
-    .navbar-links{
+    .navbar-links {
         display: none;
     }
 
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
-    .navbar-links{
+    .navbar-links {
         display: none;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 768px) {
-   
-
-
-   
-}
+@media screen and (min-width: 601px) and (max-width: 768px) {}
