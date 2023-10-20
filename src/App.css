@@ -140,6 +140,10 @@
     font-size: 32px;
 }
 
+.tecnologie-span-home {
+    color: var(--primary);
+}
+
 .img-persona {
     /* width: 355px;
     height: 355px; */

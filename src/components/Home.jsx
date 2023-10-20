@@ -28,19 +28,21 @@ const Home = () => {
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.6 }}
             className="">
+            Sviluppo con
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "Sviluppo con React js",
+                " React js",
                 2000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Sviluppo con Javascript",
+                " Javascript",
                 2000,
-                "Sviluppo con Typescript",
+                " Typescript",
                 2000,
-                "Sviluppo con Html e css",
+                " Html e css",
                 2000,
               ]}
               wrapper="span"
+              className="tecnologie-span-home"
               speed={30}
               repeat={Infinity}
             />
