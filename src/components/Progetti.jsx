@@ -2,6 +2,7 @@ import React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const Progetti = (props) => {
   const animation = useAnimation();
@@ -29,13 +30,14 @@ const Progetti = (props) => {
       <div className="section-2-progetti">
         {props.data.map((item) => (
           <motion.div className="progetto" animate={animation} key={item.id}>
-            <a className="" href={item.url} target="blank">
-              <img src={item.image} alt={item.name} className="img-progetto" />
-              <div className="testo-progetto">
-                <h2 className="titolo-progetto uppercase">{item.name}</h2>
-                <p className="sottotitolo-progetto">{item.descrizione}</p>
-              </div>
-            </a>
+            <img src={item.image} alt={item.name} className="img-progetto" />
+            <div className="testo-progetto">
+              <h2 className="titolo-progetto">{item.name}</h2>
+              <p className="sottotitolo-progetto">{item.mini_descrizione}</p>
+              <Link className="link-dettagli-progetti" to={`${item.id}`}>
+                Vedi dettaglio del prodotto ➡️
+              </Link>
+            </div>
           </motion.div>
         ))}
       </div>
