@@ -1,25 +1,3 @@
-/* ! Title System */
-h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-h4, p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
 /* ! Helpers  */
 .mt-0 {
     margin-top: 0
@@ -132,10 +110,12 @@ h4, p {
 
 /* root */
 :root {
-    --arancio: #D95204;
-    --rosso: #F20505;
-    --rosso-scuro: #8C0303;
-    --nero: #0D0D0D;
+    --bianco: #FFFFFF;
+    --primary: #9FE9AA;
+    --accent: #74D440;
+    --secondary: #0D3A2A;
+    --background: #212121;
+
 }
 
 /* !section-1 home*/
@@ -153,6 +133,11 @@ h4, p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 
+}
+
+.testo, .testo h1 {
+    font-weight: normal;
+    font-size: 32px;
 }
 
 .img-persona {
@@ -279,16 +264,15 @@ h4, p {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
-    color: white !important;
-    text-shadow: 1px 1px 2px black;
-    background: var(--rosso-scuro);
+    color: black !important;
+    background: var(--primary);
     border-radius: 70px;
     padding: 10px 20px;
     transition: all 1s;
 }
 
 .btn:hover {
-    background: var(--rosso);
+    background: var(--accent);
 }
 
 /* !fine section-4 */
@@ -328,14 +312,14 @@ h4, p {
 /* !responsive  */
 @media screen and (max-width: 320px) {
 
-    .testo>h1 {
+    /* .testo>h1 {
         font-size: 44px;
         line-height: normal;
     }
 
     .testo>p {
         font-size: 18px;
-    }
+    } */
 
     .home-span {
         font-size: 13px;
@@ -409,14 +393,14 @@ h4, p {
 }
 
 @media screen and (min-width: 321px) and (max-width: 480px) {
-    .testo>h1 {
+    /* .testo>h1 {
         font-size: 44px;
         line-height: normal;
     }
 
     .testo>p {
         font-size: 18px;
-    }
+    } */
 
     .home-span {
         font-size: 13px;
@@ -484,14 +468,14 @@ h4, p {
 }
 
 @media screen and (min-width: 481px) and (max-width: 600px) {
-    .testo>h1 {
+    /* .testo>h1 {
         font-size: 44px;
         line-height: normal;
     }
 
     .testo>p {
         font-size: 18px;
-    }
+    } */
 
     .home-span {
         font-size: 14px;
@@ -555,14 +539,14 @@ h4, p {
         display: none;
     }
 
-    .testo>h1 {
+    /* .testo>h1 {
         font-size: 38px;
         line-height: normal;
     }
 
     .testo>p {
         font-size: 18px;
-    }
+    } */
 
     .home-span {
         font-size: 14px;
@@ -594,14 +578,14 @@ h4, p {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-    .testo>h1 {
+    /* .testo>h1 {
         font-size: 40px;
         line-height: normal;
     }
 
     .testo>p {
         font-size: 20px;
-    }
+    } */
 
     .home-span {
         font-size: 16px;

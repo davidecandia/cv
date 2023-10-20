@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Future';
-  src: local('Future'), url('assets/fonts/OtherFutureDemoRegular-Yz6Kq.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 .logo span {
-  font-family: 'Future', 'Montserrat', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: clamp(20px, 2.5vw, 30px);
 }
 
 

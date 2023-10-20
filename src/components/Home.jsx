@@ -1,56 +1,64 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 import "../styles/Home.css";
 import DownloadButton from "./DownloadButton";
 import SkillAnimation from "./SkillAnimation";
 const Home = () => {
   return (
-    <header className="header relative mt-[80px]  " id="section-1">
+    <header className="header relative mt-[88px]  " id="section-1">
       <div className="wrap-grid items-center contain section-1 ">
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           animate={{ opacity: 1, x: "0", y: "0" }}
           transition={{ duration: 1, delay: 1 }}
           className="testo">
-          <h1 className="text-[54px] font-bold leading-[64px] text-center">
-            👋🏻 Sono Davide Candia <br /> Front end Developer
+          <h1 className=" leading-7 mb-2">
+            Ciao, mi chiamo <span className="font-bold">Davide Candia</span>
           </h1>
           <motion.p
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.3 }}
-            className=" text-center text-neutral-400 text-[28px] font-semibold leading-7 ">
-            Html | Css | Js <br /> React.Js | Redux | RTK Query | Typescript |
-            Tailwind | Bootstrap | Figma
+            className="   text-[32px] font-normal leading-7 mb-2">
+            Sono un junior frontend developer
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.6 }}
-            className="flex justify-center">
-            <div class=" home-btn px-12 py-4 bg-neutral-400 hover:bg-neutral-500 rounded-[70px] justify-items-center content-center justify-center items-center flex">
-              {/* <span class="text-white text-lg font-semibold home-span">
-                📧 davidecandia@live.it
-              </span> */}
+            className="">
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Sviluppo con React js",
+                2000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Sviluppo con Javascript",
+                2000,
+                "Sviluppo con Typescript",
+                2000,
+                "Sviluppo con Html e css",
+                2000,
+              ]}
+              wrapper="span"
+              speed={30}
+              repeat={Infinity}
+            />
+          </motion.div>
+
+          {/* btn */}
+          <motion.div
+            initial={{ opacity: 0, y: "10%" }}
+            animate={{ opacity: 1, x: "0", y: "0" }}
+            transition={{ duration: 1, delay: 1.9 }}
+            className="mt-2">
+            <button type="button" class=" home-btn px-12 py-4 btn  ">
               <DownloadButton />
-            </div>
+            </button>
           </motion.div>
         </motion.div>
         {/* immagine Davide */}
         <div className="img flex sm:items-center justify-center bg-cover">
-          {/* <motion.img
-            initial={{ opacity: 0, y: "10%" }}
-            animate={{ opacity: 1, x: "0", y: "0" }}
-            transition={{
-              delay: 0,
-              type: "spring",
-              stiffness: 30,
-              damping: 20,
-            }}
-            className="img-persona absolute z-50"
-            src={Davide}
-            alt="Davide"
-          /> */}
           <motion.div
             className=""
             initial={{ opacity: 0, y: "10%" }}
