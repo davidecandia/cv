@@ -22,24 +22,24 @@ const Nav = () => {
           )}
         </div>
         <nav className={click ? "nav" : "nav active"}>
-          <a onClick={handleClick} href="#section-1" className="navbar-barra">
+          <a onClick={handleClick} href="/#section-1" className="navbar-barra">
             Home
           </a>
-          <a onClick={handleClick} href="#section-2" className="navbar-barra">
+          <a onClick={handleClick} href="/#section-2" className="navbar-barra">
             Progetti
           </a>
-          <a onClick={handleClick} href="#section-4" className="navbar-barra">
+          <a onClick={handleClick} href="/#section-4" className="navbar-barra">
             Contatti
           </a>
         </nav>
         <div className="navbar-links">
-          <a href="#section-1" className="navbar-barra">
+          <a href="/#section-1" className="navbar-barra">
             Home
           </a>
-          <a href="#section-2" className="navbar-barra">
+          <a href="/#section-2" className="navbar-barra">
             Progetti
           </a>
-          <a href="#section-4" className="navbar-barra">
+          <a href="/#section-4" className="navbar-barra">
             Contatti
           </a>
         </div>

@@ -19,7 +19,6 @@ const Footer = () => {
           className="social-media-link">
           <FontAwesomeIcon
             icon={faInstagram}
-            className="fa-shake"
             style={{ color: "#E6E6E6", fontSize: "4rem" }}
           />
         </a>
@@ -30,7 +29,6 @@ const Footer = () => {
           className="social-media-link">
           <FontAwesomeIcon
             icon={faFacebook}
-            className="fa-shake"
             style={{ color: "#E6E6E6", fontSize: "4rem" }}
           />
         </a>
@@ -41,7 +39,6 @@ const Footer = () => {
           className="social-media-link">
           <FontAwesomeIcon
             icon={faGithub}
-            shake
             style={{ color: "#E6E6E6", fontSize: "4rem" }}
           />
         </a>

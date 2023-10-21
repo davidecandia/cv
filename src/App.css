@@ -317,10 +317,11 @@
     margin: 0 5px;
 }
 
-.social-media-link i {
+/* .social-media-link i {
     font-size: 50px;
-    transition: all .250s;
-}
+    transition: all linear .250s;
+} */
+
 
 .copyright {
     color: white;
