@@ -54,7 +54,7 @@
 }
 
 .navbar-barra:hover {
-    color: rgb(156, 156, 156);
+    color: var(--primary);
 }
 
 

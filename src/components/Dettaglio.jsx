@@ -25,6 +25,7 @@ const Dettaglio = () => {
     descrizione,
     mini_descrizione,
     tecnologie,
+    image_open,
     image,
     url_git,
     url,
@@ -37,7 +38,11 @@ const Dettaglio = () => {
             {mini_descrizione} : {name}
           </h1>
           <div className="mb-10">
-            <img src={image} alt={name} />
+            <img
+              className="rounded-xl w-full"
+              src={image_open || image}
+              alt={name}
+            />
           </div>
           <div className="mb-10">
             <h1 className=" font-bold sm:text-3xl lg:text-5xl mb-10">
@@ -60,7 +65,7 @@ const Dettaglio = () => {
                 <a href={url} target="blank">
                   <FontAwesomeIcon
                     icon={faGlobe}
-                    style={{ color: "#ffffff", fontSize: "4rem" }}
+                    style={{ color: "#ffffff", fontSize: "2.5rem" }}
                   />
                 </a>
                 <p> Vedi demo</p>
@@ -70,7 +75,7 @@ const Dettaglio = () => {
                 <a href={url_git} target="blank">
                   <FontAwesomeIcon
                     icon={faGithub}
-                    style={{ color: "#ffffff", fontSize: "4rem" }}
+                    style={{ color: "#ffffff", fontSize: "2.5rem" }}
                   />
                 </a>
                 <p> Vedi progetto git</p>
@@ -82,7 +87,7 @@ const Dettaglio = () => {
                 <a href={url_git} target="blank">
                   <FontAwesomeIcon
                     icon={faGithub}
-                    style={{ color: "#ffffff", fontSize: "4rem" }}
+                    style={{ color: "#ffffff", fontSize: "2.5rem" }}
                   />
                 </a>
                 <p> Vedi progetto git</p>

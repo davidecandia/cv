@@ -12,23 +12,25 @@ const Home = () => {
           initial={{ opacity: 0, y: "10%" }}
           animate={{ opacity: 1, x: "0", y: "0" }}
           transition={{ duration: 1, delay: 1 }}
-          className="testo">
-          <h1 className=" leading-7 mb-2">
-            Ciao, mi chiamo <span className="font-bold">Davide Candia</span>
-          </h1>
-          <motion.p
+          className="testo flex flex-col max-lg:order-2 ">
+          <div className="my-4">
+            <h2 className=" leading-7">
+              Ciao, mi chiamo <span className="font-bold">Davide Candia</span>
+            </h2>
+          </div>
+          <motion.div
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.3 }}
-            className="   text-[32px] font-normal leading-7 mb-2">
-            Sono un junior frontend developer
-          </motion.p>
+            className="my-4 text-[32px] font-normal leading-7">
+            <span>Sono un junior frontend developer</span>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.6 }}
             className="">
-            Sviluppo con
+            Sviluppo con{" "}
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
@@ -53,7 +55,7 @@ const Home = () => {
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.9 }}
-            className="mt-2">
+            className="my-2">
             <button type="button" class=" home-btn px-12 py-4 btn  ">
               <DownloadButton />
             </button>

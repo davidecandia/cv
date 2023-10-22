@@ -3,6 +3,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Progetti = (props) => {
   const animation = useAnimation();
@@ -27,6 +29,9 @@ const Progetti = (props) => {
   }, [inView]);
   return (
     <section ref={ref} className="contain py-28" id="section-2">
+      <h1 className="text-center font-bold sm:text-3xl lg:text-5xl mb-3">
+        Progetti
+      </h1>
       <div className="section-2-progetti">
         {props.data.map((item) => (
           <motion.div className="progetto" animate={animation} key={item.id}>
@@ -34,9 +39,15 @@ const Progetti = (props) => {
             <div className="testo-progetto">
               <h2 className="titolo-progetto">{item.name}</h2>
               <p className="sottotitolo-progetto">{item.mini_descrizione}</p>
-              <Link className="link-dettagli-progetti" to={`${item.id}`}>
-                Vedi dettaglio del prodotto ➡️
-              </Link>
+              <div className="flex items-center">
+                <Link className="link-dettagli-progetti" to={`/${item.id}`}>
+                  Vedi dettaglio del prodotto{" "}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    style={{ color: "#0D3A2A" }}
+                  />
+                </Link>
+              </div>
             </div>
           </motion.div>
         ))}

@@ -51,13 +51,13 @@ ul[class^=ring] li {
 .ring-0 {
     width: 25em;
     aspect-ratio: 1;
-    -webkit-animation: clockwiseRotate 35s linear infinite;
-    animation: clockwiseRotate 35s linear infinite;
+    -webkit-animation: clockwiseRotate 100s linear infinite;
+    animation: clockwiseRotate 100s linear infinite;
 }
 
 .ring-0 img {
-    -webkit-animation: counterClockwiseRotate 35s linear infinite;
-    animation: counterClockwiseRotate 35s linear infinite;
+    -webkit-animation: counterClockwiseRotate 100s linear infinite;
+    animation: counterClockwiseRotate 100s linear infinite;
 }
 
 .ring-0>*:nth-of-type(1) {
@@ -87,13 +87,13 @@ ul[class^=ring] li {
 .ring-1 {
     width: 21.5em;
     aspect-ratio: 1;
-    -webkit-animation: clockwiseRotate 30s linear infinite;
-    animation: clockwiseRotate 30s linear infinite;
+    -webkit-animation: clockwiseRotate 100s linear infinite;
+    animation: clockwiseRotate 100s linear infinite;
 }
 
 .ring-1 img {
-    -webkit-animation: counterClockwiseRotate 30s linear infinite;
-    animation: counterClockwiseRotate 30s linear infinite;
+    -webkit-animation: counterClockwiseRotate 100s linear infinite;
+    animation: counterClockwiseRotate 100s linear infinite;
 }
 
 .ring-1>*:nth-of-type(1) {
@@ -222,18 +222,18 @@ ul[class^=ring] li {
     .orbit-wrap {
         height: 40em;
         list-style: none;
-        font-size: .5em;
+        font-size: .7em;
     }
 
     .orbit-center {
-        width: 17em;
-        height: 17em;
+        width: 18em;
+        height: 18em;
 
     }
 
     .orbit-center__icon {
-        width: 17em;
-        height: 17em;
+        width: 18em;
+        height: 18em;
     }
 }
 
@@ -260,7 +260,7 @@ ul[class^=ring] li {
     .orbit-wrap {
         height: 40em;
         list-style: none;
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .orbit-center {

@@ -19,7 +19,7 @@ const Footer = () => {
           className="social-media-link">
           <FontAwesomeIcon
             icon={faInstagram}
-            style={{ color: "#E6E6E6", fontSize: "4rem" }}
+            style={{ color: "#E6E6E6", fontSize: "2.5rem" }}
           />
         </a>
         <a
@@ -29,7 +29,7 @@ const Footer = () => {
           className="social-media-link">
           <FontAwesomeIcon
             icon={faFacebook}
-            style={{ color: "#E6E6E6", fontSize: "4rem" }}
+            style={{ color: "#E6E6E6", fontSize: "2.5rem" }}
           />
         </a>
         <a
@@ -39,7 +39,7 @@ const Footer = () => {
           className="social-media-link">
           <FontAwesomeIcon
             icon={faGithub}
-            style={{ color: "#E6E6E6", fontSize: "4rem" }}
+            style={{ color: "#E6E6E6", fontSize: "2.5rem" }}
           />
         </a>
       </div>
