@@ -186,7 +186,8 @@
 
 .img-progetto {
     width: 100%;
-    border-radius: var(--bordi-curvi);
+    border-top-left-radius: var(--bordi-curvi);
+    border-top-right-radius: var(--bordi-curvi);
 
 }
 

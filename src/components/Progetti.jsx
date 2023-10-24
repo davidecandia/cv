@@ -35,7 +35,9 @@ const Progetti = (props) => {
       <div className="section-2-progetti">
         {props.data.map((item) => (
           <motion.div className="progetto" animate={animation} key={item.id}>
-            <img src={item.image} alt={item.name} className="img-progetto" />
+            <Link to={`/${item.id}`}>
+              <img src={item.image} alt={item.name} className="img-progetto" />
+            </Link>
             <div className="testo-progetto">
               <h2 className="titolo-progetto">{item.name}</h2>
               <p className="sottotitolo-progetto">{item.mini_descrizione}</p>
