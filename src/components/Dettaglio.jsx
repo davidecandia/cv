@@ -17,6 +17,7 @@ const Dettaglio = () => {
   useEffect(() => {
     getProjectById(id);
   }, [id]);
+
   if (item === undefined) {
     return <h1>nessun elemento</h1>;
   }
@@ -38,11 +39,13 @@ const Dettaglio = () => {
             {mini_descrizione} : {name}
           </h1>
           <div className="mb-10">
-            <img
-              className="rounded-xl w-full"
-              src={image_open || image}
-              alt={name}
-            />
+            <a href={url || url_git} target="blank">
+              <img
+                className="rounded-xl w-full"
+                src={image_open || image}
+                alt={name}
+              />
+            </a>
           </div>
           <div className="mb-10">
             <h1 className=" font-bold sm:text-3xl lg:text-5xl mb-10">
@@ -58,7 +61,7 @@ const Dettaglio = () => {
             <p>{tecnologie}</p>
           </div>
         </div>
-        <div className="relative">
+        <div className="relative lg:mt-24">
           {url !== "" ? (
             <div className="lg:fixed">
               <span className="flex gap-4 items-center">
