@@ -35,7 +35,7 @@ const Dettaglio = () => {
     <article className="mt-[160px] mb-[80px]">
       <div className="contain grid grid-cols-1 lg:grid-cols-4 gap-10">
         <div className="col-span-3">
-          <h1 className=" font-bold sm:text-3xl lg:text-5xl mb-10">
+          <h1 className=" font-bold text-4xl lg:text-5xl mb-10">
             {mini_descrizione} : {name}
           </h1>
           <div className="mb-10">
@@ -48,53 +48,53 @@ const Dettaglio = () => {
             </a>
           </div>
           <div className="mb-10">
-            <h1 className=" font-bold sm:text-3xl lg:text-5xl mb-10">
+            <h1 className=" font-bold text-2xl lg:text-4xl mb-10">
               Descrizione progetto
             </h1>
-            <p>{descrizione}</p>
+            <p className="text-base lg:text-lg">{descrizione}</p>
           </div>
 
           <div>
-            <h1 className=" font-bold sm:text-3xl lg:text-5xl mb-10">
+            <h1 className=" font-bold text-2xl lg:text-4xl mb-10">
               Tecnologie utilizzate
             </h1>
-            <p>{tecnologie}</p>
+            <p className="text-base lg:text-lg">{tecnologie}</p>
           </div>
         </div>
         <div className="relative lg:mt-24">
           {url !== "" ? (
             <div className="lg:fixed">
-              <span className="flex gap-4 items-center">
-                <a href={url} target="blank">
+              <a href={url} target="blank">
+                <span className="flex gap-4 items-center">
                   <FontAwesomeIcon
                     icon={faGlobe}
                     style={{ color: "#ffffff", fontSize: "2.5rem" }}
                   />
-                </a>
-                <p> Vedi demo</p>
-              </span>
+                  <p> Vedi demo</p>
+                </span>
+              </a>
               <br />
-              <span className="flex gap-4 items-center">
-                <a href={url_git} target="blank">
+              <a href={url_git} target="blank">
+                <span className="flex gap-4 items-center">
                   <FontAwesomeIcon
                     icon={faGithub}
                     style={{ color: "#ffffff", fontSize: "2.5rem" }}
                   />
-                </a>
-                <p> Vedi progetto git</p>
-              </span>
+                  <p> Vedi progetto git</p>
+                </span>
+              </a>
             </div>
           ) : (
             <div className="lg:fixed">
-              <span className="flex gap-4 items-center">
-                <a href={url_git} target="blank">
+              <a href={url_git} target="blank">
+                <span className="flex gap-4 items-center">
                   <FontAwesomeIcon
                     icon={faGithub}
                     style={{ color: "#ffffff", fontSize: "2.5rem" }}
                   />
-                </a>
-                <p> Vedi progetto git</p>
-              </span>
+                  <p> Vedi progetto git</p>
+                </span>
+              </a>
             </div>
           )}
         </div>

@@ -29,9 +29,7 @@ const Progetti = (props) => {
   }, [inView]);
   return (
     <section ref={ref} className="contain py-28" id="section-2">
-      <h1 className="text-center font-bold sm:text-3xl lg:text-5xl mb-3">
-        Progetti
-      </h1>
+      <h1 className="text-center font-bold text-5xl mb-3">Progetti</h1>
       <div className="section-2-progetti">
         {props.data.map((item) => (
           <motion.div className="progetto" animate={animation} key={item.id}>

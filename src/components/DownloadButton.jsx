@@ -2,7 +2,7 @@ import React from "react";
 
 const DownloadButton = () => {
   const handleDownload = () => {
-    const pdfPath = "/cv/Curriculum.pdf";
+    const pdfPath = "Curriculum.pdf";
     const link = document.createElement("a");
     link.href = pdfPath;
     link.download = "Curriculum.pdf";

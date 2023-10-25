@@ -129,7 +129,13 @@
 }
 
 .testo, .testo span {
-    font-size: 32px;
+    font-size: 30px;
+}
+
+@media (max-width: 1024px) {
+    .testo, .testo span {
+        font-size: 22px;
+    }
 }
 
 .tecnologie-span-home {
@@ -335,14 +341,7 @@
 /* !responsive  */
 @media screen and (max-width: 320px) {
 
-    /* .testo>h1 {
-        font-size: 44px;
-        line-height: normal;
-    }
 
-    .testo>p {
-        font-size: 18px;
-    } */
 
     .home-span {
         font-size: 13px;
@@ -456,14 +455,6 @@
         gap: 40px;
     }
 
-    .titolo-progetto {
-        font-size: 24px;
-    }
-
-    .sottotitolo-progetto {
-        font-size: 15px;
-        line-height: 1.3;
-    }
 
 
 
@@ -525,13 +516,6 @@
         gap: 40px;
     }
 
-    .titolo-progetto {
-        font-size: 28px;
-    }
-
-    .sottotitolo-progetto {
-        font-size: 18px;
-    }
 
     .link-progetto {
         font-size: 18px;

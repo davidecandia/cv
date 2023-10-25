@@ -32,7 +32,7 @@ const Contatti = () => {
     <section
       class="section-4 flex direction-column align-center justify-center "
       id="section-4">
-      <h1 class="font-bold sm:text-3xl lg:text-5xl mb-3">Contatti</h1>
+      <h1 class="font-bold text-5xl mb-3">Contatti</h1>
       {/* <form class="form flex direction-column">
             <input type="text" placeholder="Nome"/>
             <input type="email" placeholder="E-mail"/>

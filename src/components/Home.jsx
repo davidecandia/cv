@@ -22,7 +22,7 @@ const Home = () => {
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.3 }}
-            className="my-4 text-[32px] font-normal leading-7">
+            className="my-4 text-3xl font-normal leading-7">
             <span>Sono un junior frontend developer</span>
           </motion.div>
           <motion.div
@@ -33,14 +33,21 @@ const Home = () => {
             Sviluppo con{" "}
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
-                " React js",
-                2000, // wait 1s before replacing "Mice" with "Hamsters"
-                " Javascript",
+                "Html e css",
                 2000,
-                " Typescript",
+                "Javascript",
                 2000,
-                " Html e css",
+                "React js",
+                2000,
+                "Redux",
+                2000,
+                "Typescript",
+                2000,
+                "Git",
+                2000,
+                "Node.js",
+                2000,
+                "Tailwind",
                 2000,
               ]}
               wrapper="span"
