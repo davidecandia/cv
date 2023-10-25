@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import data from "../data";
 
@@ -9,7 +9,9 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const Dettaglio = () => {
   const [item, setItem] = useState();
+  const [altezza, setAltezza] = useState();
   const { id } = useParams();
+
   const getProjectById = (value) => {
     const project = data.find((p) => p.id === value);
     return project ? setItem(project) : null;
@@ -18,9 +20,19 @@ const Dettaglio = () => {
     getProjectById(id);
   }, [id]);
 
+  const h1Ref = useRef(null);
+
+  useEffect(() => {
+    if (h1Ref.current) {
+      const altezzaH1 = h1Ref.current.offsetHeight;
+      setAltezza(altezzaH1);
+    }
+  }, [item]);
+
   if (item === undefined) {
     return <h1>nessun elemento</h1>;
   }
+
   const {
     name,
     descrizione,
@@ -35,7 +47,7 @@ const Dettaglio = () => {
     <article className="mt-[160px] mb-[80px]">
       <div className="contain grid grid-cols-1 lg:grid-cols-4 gap-10">
         <div className="col-span-3">
-          <h1 className=" font-bold text-4xl lg:text-5xl mb-10">
+          <h1 ref={h1Ref} className=" font-bold text-4xl lg:text-5xl mb-10">
             {mini_descrizione} : {name}
           </h1>
           <div className="mb-10">
@@ -61,7 +73,15 @@ const Dettaglio = () => {
             <p className="text-base lg:text-lg">{tecnologie}</p>
           </div>
         </div>
-        <div className="relative lg:mt-24">
+        <div
+          style={{
+            marginTop: `${
+              window.innerWidth > 1024 && altezza !== undefined
+                ? parseInt(altezza, 10) + 40
+                : 0
+            }px`,
+          }}
+          className="relative ">
           {url !== "" ? (
             <div className="lg:fixed">
               <a href={url} target="blank">
