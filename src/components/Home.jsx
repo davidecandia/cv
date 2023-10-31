@@ -1,58 +1,81 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 import "../styles/Home.css";
 import DownloadButton from "./DownloadButton";
 import SkillAnimation from "./SkillAnimation";
 const Home = () => {
   return (
+<<<<<<< HEAD
     <header
       className="header relative mt-[80px] max-sm:mt-[80px]  "
       id="section-1">
+=======
+    <header className="header relative mt-[88px]  " id="section-1">
+>>>>>>> render.com
       <div className="wrap-grid items-center contain section-1 ">
         <motion.div
           initial={{ opacity: 0, y: "10%" }}
           animate={{ opacity: 1, x: "0", y: "0" }}
           transition={{ duration: 1, delay: 1 }}
-          className="testo">
-          <h1 className="text-[54px] font-bold leading-[64px] text-center">
-            👋🏻 Sono Davide Candia <br /> Front end Developer
-          </h1>
-          <motion.p
+          className="testo flex flex-col max-lg:order-2 ">
+          <div className="my-4">
+            <h2 className=" leading-7">
+              Ciao, mi chiamo <span className="font-bold">Davide Candia</span>
+            </h2>
+          </div>
+          <motion.div
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.3 }}
-            className=" text-center text-neutral-400 text-[28px] font-semibold leading-7 ">
-            Tecnologie: HTML | CSS | JS <br /> REACT.JS | REDUX | RTK QUERY |
-            TYPESCRIPT | TAILWIND | BOOTSTRAP | FIGMA
-          </motion.p>
+            className="my-4 text-3xl font-normal leading-7">
+            <span>Sono un junior frontend developer</span>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: "10%" }}
             animate={{ opacity: 1, x: "0", y: "0" }}
             transition={{ duration: 1, delay: 1.6 }}
-            className="flex justify-center">
-            <div class=" home-btn px-12 py-4 bg-neutral-400 hover:bg-neutral-500 rounded-[70px] justify-items-center content-center justify-center items-center flex">
-              {/* <span class="text-white text-lg font-semibold home-span">
-                📧 davidecandia@live.it
-              </span> */}
+            className="">
+            Sviluppo con{" "}
+            <TypeAnimation
+              sequence={[
+                "Html e css",
+                2000,
+                "Javascript",
+                2000,
+                "React js",
+                2000,
+                "Redux",
+                2000,
+                "Typescript",
+                2000,
+                "Git",
+                2000,
+                "Node.js",
+                2000,
+                "Tailwind",
+                2000,
+              ]}
+              wrapper="span"
+              className="tecnologie-span-home"
+              speed={30}
+              repeat={Infinity}
+            />
+          </motion.div>
+
+          {/* btn */}
+          <motion.div
+            initial={{ opacity: 0, y: "10%" }}
+            animate={{ opacity: 1, x: "0", y: "0" }}
+            transition={{ duration: 1, delay: 1.9 }}
+            className="my-2">
+            <button type="button" class=" home-btn px-12 py-4 btn  ">
               <DownloadButton />
-            </div>
+            </button>
           </motion.div>
         </motion.div>
         {/* immagine Davide */}
         <div className="img flex sm:items-center justify-center bg-cover">
-          {/* <motion.img
-            initial={{ opacity: 0, y: "10%" }}
-            animate={{ opacity: 1, x: "0", y: "0" }}
-            transition={{
-              delay: 0,
-              type: "spring",
-              stiffness: 30,
-              damping: 20,
-            }}
-            className="img-persona absolute z-50"
-            src={Davide}
-            alt="Davide"
-          /> */}
           <motion.div
             className=""
             initial={{ opacity: 0, y: "10%" }}
@@ -67,27 +90,6 @@ const Home = () => {
           </motion.div>
         </div>
         {/* fine immagine Davide */}
-        <motion.div
-          initial={{ opacity: 0, y: "10%" }}
-          animate={{ opacity: 1, x: "0", y: "0" }}
-          transition={{ duration: 1, delay: 2 }}
-          className="sotto ">
-          <div className="flex gap-2">
-            <svg
-              className=" animate-bounce"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="33"
-              viewBox="0 0 16 33"
-              fill="none">
-              <path
-                d="M7.29289 32.7071C7.68342 33.0976 8.31658 33.0976 8.70711 32.7071L15.0711 26.3431C15.4616 25.9526 15.4616 25.3195 15.0711 24.9289C14.6805 24.5384 14.0474 24.5384 13.6569 24.9289L8 30.5858L2.34315 24.9289C1.95262 24.5384 1.31946 24.5384 0.928933 24.9289C0.538409 25.3195 0.538409 25.9526 0.928933 26.3431L7.29289 32.7071ZM7 4.37114e-08L7 32L9 32L9 -4.37114e-08L7 4.37114e-08Z"
-                fill="#DEDEDE"
-              />
-            </svg>
-            <h4 className=" uppercase text-xl font-bold">Progetti</h4>
-          </div>
-        </motion.div>
       </div>
       {/* palla dietro animata  */}
       <div className="blob max-md:hidden">
