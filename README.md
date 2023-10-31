@@ -1,3 +1,7 @@
-# React App
-Deploy site: 
-https://dexy98.github.io/cv/
+
+# Sito portfolio
+
+
+
+__Deploy site__:
+https://davidecandia.onrender.com/
