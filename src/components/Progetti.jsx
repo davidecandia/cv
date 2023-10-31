@@ -33,7 +33,7 @@ const Progetti = (props) => {
       <div className="section-2-progetti">
         {props.data.map((item) => (
           <motion.div className="progetto" animate={animation} key={item.id}>
-            <Link to={`/${item.id}`}>
+            <Link to={`/cv/${item.id}`}>
               <img src={item.image} alt={item.name} className="img-progetto" />
             </Link>
             <div className="testo-progetto">

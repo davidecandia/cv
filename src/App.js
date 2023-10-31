@@ -17,7 +17,7 @@ function App() {
     <Router>
       <Nav />
       <Routes>
-        <Route exact path='/' element={
+        <Route exact path='/cv' element={
           <>
             <Home />
             <Progetti data={progetti} />
@@ -25,7 +25,7 @@ function App() {
           </>
         }
         />
-        <Route exact path='/:id' element={< Dettaglio />} />
+        <Route exact path='/cv/:id' element={< Dettaglio />} />
       </Routes>
       <Footer />
     </Router>
