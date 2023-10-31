@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.c1f0b7b6.css",
-    "main.js": "/cv/static/js/main.b0fc91de.js",
+    "main.css": "/cv/static/css/main.9b914307.css",
+    "main.js": "/cv/static/js/main.76b0dd37.js",
     "static/media/Davide foto.jpg": "/cv/static/media/Davide foto.299185c2bc9aaa730005.jpg",
-    "static/media/dog.jpg": "/cv/static/media/dog.c0b0855fd9ce7012ec85.jpg",
-    "static/media/cocktail.jpg": "/cv/static/media/cocktail.d0931606ad6cd86f9317.jpg",
-    "static/media/shop.jpg": "/cv/static/media/shop.3308ec7856e88dddb933.jpg",
-    "static/media/tecnostampa.jpg": "/cv/static/media/tecnostampa.458f106341346ea75585.jpg",
-    "static/media/clone-spotify.jpg": "/cv/static/media/clone-spotify.f9dbc1add745ac95a94a.jpg",
-    "static/media/sinisky.jpg": "/cv/static/media/sinisky.9d4f5e404700b4972294.jpg",
-    "static/media/movies.jpg": "/cv/static/media/movies.c22e955d0309ebeccee4.jpg",
+    "static/media/cocktail-open.png": "/cv/static/media/cocktail-open.1662b99e5019db269f6c.png",
+    "static/media/dog-open.png": "/cv/static/media/dog-open.752dc7acd93942d23865.png",
+    "static/media/shop-open.png": "/cv/static/media/shop-open.e4b5727c1b32e6428713.png",
     "static/media/meteo.jpg": "/cv/static/media/meteo.568151c0cbb24e18fb16.jpg",
-    "static/media/notes.jpg": "/cv/static/media/notes.194f27582b62df0349cf.jpg",
-    "static/media/lista.jpg": "/cv/static/media/lista.7bdbb16120d7d1d84f94.jpg",
-    "static/media/logo_davide.png": "/cv/static/media/logo_davide.2b42a099829c7692e407.png",
+    "static/media/cocktail.png": "/cv/static/media/cocktail.1448d16a086e4f5dab9c.png",
+    "static/media/movies-open.png": "/cv/static/media/movies-open.01426f49a104ddaf1545.png",
+    "static/media/dog.png": "/cv/static/media/dog.cb46923112432f52706e.png",
+    "static/media/snake-open.png": "/cv/static/media/snake-open.f414ba7810fd3bbc418a.png",
+    "static/media/spotify-open.png": "/cv/static/media/spotify-open.70259fe2f5eaae836056.png",
+    "static/media/shop.png": "/cv/static/media/shop.9f2f6dfa305bbfe9f11f.png",
+    "static/media/movies.png": "/cv/static/media/movies.ab083aae47f8927f9300.png",
+    "static/media/notes-open.png": "/cv/static/media/notes-open.c2eb3b47c69acc9ba7d8.png",
+    "static/media/spotify.png": "/cv/static/media/spotify.6fe57b3a39101221d28f.png",
+    "static/media/notes.png": "/cv/static/media/notes.2e9703370f2bc166abe5.png",
+    "static/media/snake.png": "/cv/static/media/snake.0dee0da6e9a1ec663f9e.png",
     "index.html": "/cv/index.html",
-    "main.c1f0b7b6.css.map": "/cv/static/css/main.c1f0b7b6.css.map",
-    "main.b0fc91de.js.map": "/cv/static/js/main.b0fc91de.js.map"
+    "main.9b914307.css.map": "/cv/static/css/main.9b914307.css.map",
+    "main.76b0dd37.js.map": "/cv/static/js/main.76b0dd37.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1f0b7b6.css",
-    "static/js/main.b0fc91de.js"
+    "static/css/main.9b914307.css",
+    "static/js/main.76b0dd37.js"
   ]
 }
