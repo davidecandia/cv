@@ -6,6 +6,7 @@ import data from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import Error from "./Error";
 
 const Dettaglio = () => {
   const [item, setItem] = useState();
@@ -30,7 +31,7 @@ const Dettaglio = () => {
   }, [item]);
 
   if (item === undefined) {
-    return <h1>nessun elemento</h1>;
+    return <Error />;
   }
 
   const {
