@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dettaglio from './components/Dettaglio';
+import Error from './components/Error';
 
 function App() {
   const [progetti] = useState(data);
@@ -26,6 +27,7 @@ function App() {
         }
         />
         <Route exact path='/:id' element={< Dettaglio />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       <Footer />
     </Router>
